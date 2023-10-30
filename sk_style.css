@@ -1,0 +1,412 @@
+@charset "UTF-8";
+
+html,
+body { height:100%; width:100%; }
+
+/* intro */
+.intro_wrap { background:#fff; height:100%; left:0; position:fixed; top:0; width:100%; z-index:1000; }
+.intro_balls { height:102px; left:50%; margin:-51px 0 0 -51px; position:absolute; top:50%; width:102px; }
+.each_balls { border-radius:50%; height:28px; position:absolute; width:28px; }
+.each_balls.ball1 { background:#e9002d; left:50%; margin-left:-12px; top:0; }
+.each_balls.ball2 { background:#ff7a01; margin-top:-12px; right:0; top:50%; }
+.each_balls.ball3 { background:#e9002d; bottom:0; left:50%; margin-left:-12px; }
+.each_balls.ball4 { background:#ff7a01; left:0; margin-top:-12px; top:50%; }
+
+.old_logo { background:url("https://recruit.skinnovation.com/resources_ui/images/main/old_logo.svg") center / 100% auto no-repeat; height:240px; left:50%; margin:-120px 0 0 -149px; position:absolute; top:50%; transform:scale(0); width:298px; }
+
+.red_ball { background:#e9002d; border-radius:50%; height:400px; left:50%; margin:-200px 0 0 -200px; position:absolute; top:50%; transform:scale(0); width:400px; }
+
+.green_ball { background:#b0e427; border-radius:50%; height:400px; left:50%; margin:-200px 0 0 -200px; opacity:0; position:absolute; top:50%; transform:scale(50); width:400px; }
+
+.white_ball { background:#fff; border-radius:50%; height:28px; left:50%; margin:-14px 0 0 -14px; opacity:0; position:absolute; top:50%; width:28px; z-index:5; }
+
+.white_logo { background:url("https://recruit.skinnovation.com/resources_ui/images/main/logo_white.svg") center / 100% auto no-repeat; height:240px; left:50%; margin:-120px 0 0 -149px; position:absolute; top:50%; transform:scale(0); width:298px; }
+.new_logo { background:url("https://recruit.skinnovation.com/resources_ui/images/main/new_logo.svg") center / 100% auto no-repeat; height:240px; left:50%; margin:-120px 0 0 -149px; opacity:0; position:absolute; top:50%; width:298px; z-index:7; }
+/* intro end */
+
+/* nav */
+.main_nav { position:fixed; right:40px; top:50%; -webkit-transform:translateY(-50%); transform:translateY(-50%); width:32px; z-index:7; }
+
+.page_num { height:95px; position:relative; }
+.page_num span { bottom:0; color:#a1d71b; display:block; font-size:14px; position:absolute; text-align:center; width:100%; }
+.page_num span.now { bottom:auto; top:0; }
+
+.page_num i { background:#a1d71b; height:50px; margin-top:-25px; position:absolute; right:10px; top:50%; width:1px; }
+
+.nav_btns { margin-top:24px; }
+.nav_btns a { display:block; height:32px; overflow:hidden; text-indent:-20000px; width:32px; }
+.nav_btns a.up { background:url("https://recruit.skinnovation.com/resources_ui/images/main/arrow_u.png") center / 100% auto no-repeat; }
+.nav_btns a.down { background:url("https://recruit.skinnovation.com/resources_ui/images/main/arrow_d.png") center / 100% auto no-repeat; margin-top:8px; }
+/* nav end */
+
+/* header */
+.main_header { height:90px; left:0; position:fixed; top:0; transition:.3s; width:100%; z-index:901; }
+
+.main_header .header_inner { display:flex; justify-content:space-between; padding:0 40px; }
+.main_header .logo a { background:url("https://recruit.skinnovation.com/resources_ui/images/main/logo.svg") 0 50% no-repeat; display:block; font-size:0; height:90px; overflow:hidden; text-indent:-20000px; width:142px; }
+
+.main_header .gnb .gnb_list { align-items:center; display:flex; height:100%; }
+
+.main_header .gnb .gnb_list li { margin-right:40px; }
+.main_header .gnb .gnb_list li:last-child { margin-right:0; }
+.main_header .gnb .gnb_list .depth01 { color:var(--black); display:inline-block; font-family:"SK Pretendard"; font-weight:500; font-size:20px; padding:10px 0; position:relative; transition:color 1s, ease transform; }
+.main_header.on .gnb .gnb_list .depth01 { color:#fff; }
+.main_header .gnb .gnb_list .depth01:after { background:#a1d71b; content:none; display:inline-block; height:4px; left:0; position:absolute; top:2px; transition:0.5s; width:100%; }
+.main_header .gnb .gnb_list .depth01:hover:after { content:""; }
+.main_header .gnb .gnb_list .depth01.active:after { content:""; }
+
+.main_header .btn_ham { background:url("https://recruit.skinnovation.com/resources_ui/images/main/btn-hamburger.svg") center / 24px auto no-repeat; font-size:0; height:40px; position:absolute; right:12px; top:10px; width:40px; }
+.main_header.on .btn_ham { background:url("https://recruit.skinnovation.com/resources_ui/images/main/btn-hamburger-w.svg") center / 24px auto no-repeat; }
+.main_header .btn_ham.active { background:url("https://recruit.skinnovation.com/resources_ui/images/main/btn-close.svg") center / 24px auto no-repeat; }
+/* header end */
+
+.main_each_cont { overflow:hidden; position:relative; width:100%; }
+.main_each_cont#wayToGreen { height:300vh; }
+/* way to green */
+.way_to_green { align-items:center; background:url("https://recruit.skinnovation.com/resources_ui/images/main/sect1_bg.jpg") center / cover no-repeat; display:flex; left:0; height:100vh; position:absolute; top:0; width:100%; }
+.way_to_green img { background:#a1d71b; height:auto; object-fit:cover; transition:.5s ease opacity; width:100%; }
+.for_pc { display:block; }
+.for_pc_1700,
+.for_mob { display:none; }
+/* way to green end */
+
+/* be professional */
+.main_each_cont#bePro { background:#fff; height:500vh; }
+
+.be_pro_wrap { align-items:center; display:flex; left:0; height:100vh; position:absolute; top:0; width:100%; z-index:2; }
+.be_pro_ttl_wrap { display:flex; flex-direction:column; height:100vh; justify-content:center; padding-left:240px; width:100%; }
+.be_pro_ttl_wrap > div { left:-8px; overflow:hidden; position:relative; }
+.be_pro_ttl_wrap > div strong { color:#a1d71b; font-size:180px; line-height:1.11; position:relative; top:180px; transition:.5s; }
+.be_pro_ttl_wrap.on > div strong { top:0; }
+
+.be_pro_bg { background:url("https://recruit.skinnovation.com/resources_ui/images/main/sect2_bg.jpg") center top / cover no-repeat; bottom:0; height:100vh; left:0; position:absolute; transform:scale(0.80); transform-origin:bottom; width:100%; z-index:1; }
+.be_pro_bg.on { position:fixed; top:0; transform:scale(1); }
+
+.pro_mngr_txt { align-items:center; display:flex; left:0; height:100vh; position:absolute; top:0; width:100%; z-index:3; }
+.pro_mngr_txt ul { align-items:center; display:flex; flex-direction:column; height:100vh; justify-content:center; width:100%; }
+.pro_mngr_txt ul li { overflow:hidden; position:relative; }
+.pro_mngr_txt ul li p { color:#a1d71b; font-size:68px; font-weight:900; line-height:1.4; position:relative; top:88px; transition:.5s; }
+.pro_mngr_txt ul.on li p { top:0; }
+/*.pro_mngr_txt ul li { color:#a1d71b; display:block; font-size:68px; font-weight:900; line-height:1.4; opacity:0; transform:translateY(100px); }*/
+/* be professional end */
+
+/* be yourself */
+.main_each_cont#beYourself { background:#fff; height:500vh; z-index:3; }
+
+.be_yourself_wrap { align-items:center; display:flex; left:0; height:100vh; position:absolute; top:0; width:100%; z-index:2; }
+.be_yourself_ttl_wrap { display:flex; flex-direction:column; height:100vh; justify-content:center; padding-left:240px; width:100%; }
+.be_yourself_ttl_wrap > div { left:-8px; overflow:hidden; position:relative; }
+.be_yourself_ttl_wrap > div strong { color:#a1d71b; font-size:180px; line-height:1.11; position:relative; top:180px; transition:.5s; }
+.be_yourself_ttl_wrap.on > div strong { top:0; }
+
+.be_yourself_bg { background:url("https://recruit.skinnovation.com/resources_ui/images/main/sect3_bg.jpg") center top / cover no-repeat; bottom:0; height:100vh; left:0; position:absolute; transform:scale(0.80); transform-origin:bottom; width:100%; z-index:1; }
+.be_yourself_bg.on { bottom:auto; position:fixed; transform:scale(1); }
+
+.yourself_txt { align-items:center; display:flex; left:0; height:100vh; position:absolute; top:0; width:100%; z-index:3; }
+.yourself_txt ul { align-items:center; display:flex; flex-direction:column; height:100vh; justify-content:center; width:100%; }
+.yourself_txt ul li { overflow:hidden; position:relative; }
+.yourself_txt ul li p { color:#a1d71b; font-size:68px; font-weight:900; line-height:1.4; position:relative; top:88px; transition:.5s; }
+.yourself_txt ul.on li p { top:0; }
+.yourself_txt ul li.txt03 { margin-top:44px; }
+.yourself_txt ul li.txt03 > div { position:relative; top:60px; transition:.5s; }
+.yourself_txt ul li.txt03.on > div { top:0; }
+.yourself_txt ul li.txt03 a { background:#fff; color:var(--black); display:inline-block; font-size:16px; font-weight:500; height:60px; line-height:60px; margin:0 6px; text-align:center; width:180px; }
+.yourself_txt ul li.txt03 a span { position:relative; }
+.yourself_txt ul li.txt03 a span:before { background:var(--black); bottom:-1px; content:""; height:1px; left:0; opacity:0.8; position:absolute; transition:all .2s ease; width:0; }
+.yourself_txt ul li.txt03 a:hover span:before { width:100%; }
+/* be yourself end */
+
+/* footer */
+.main_footer { background:transparent; bottom:-144px; height:144px; left:0; opacity:0; position:fixed; transition:all .6s ease; width:100%; z-index:10; }
+.main_footer.on { bottom:0; opacity:1; }
+.main_footer .footer_inner { align-items:flex-end; display:flex; justify-content:space-between; padding:39px 40px 35px; }
+
+.footer_inner .ft_left_box .copyright { color:var(--dark-green); font-size:22px; font-weight:700; margin-bottom:17px; }
+
+.footer_inner .ft_left_box .ft_info_wrap { align-items:center; display:flex; }
+.ft_left_box .ft_info_wrap p { font-size:1.4rem; line-height:1.4; }
+
+.ft_left_box .ft_info_wrap .ft_info_list { align-items:center; display:flex; }
+.ft_left_box .ft_info_wrap .ft_info_list:before { background-color:var(--gray); content:""; height:12px; margin-left:15px; width:1px; }
+
+.ft_left_box .ft_info_wrap .ft_info_list li { margin-left:10px; }
+
+.ft_left_box .ft_info_wrap .ft_info_list li a { background-position:center center; background-repeat:no-repeat; display:block; font-size:0; height:30px; width:30px; }
+.ft_left_box .ft_info_wrap .ft_info_list .icon-facebook a { background-image:url("https://recruit.skinnovation.com/resources_ui/images/main/icon-ft-facebook.svg"); }
+.ft_left_box .ft_info_wrap .ft_info_list .icon-youtube a { background-image:url("https://recruit.skinnovation.com/resources_ui/images/main/icon-ft-youtube.svg"); }
+.ft_left_box .ft_info_wrap .ft_info_list .icon-instar a { background-image:url("https://recruit.skinnovation.com/resources_ui/images/main/icon-ft-instar.svg"); }
+.ft_left_box .ft_info_wrap .ft_info_list .icon-in a { background-image:url("https://recruit.skinnovation.com/resources_ui/images/main/icon-ft-in.svg"); }
+
+.main_footer.on .ft_left_box .ft_info_wrap p,
+.main_footer.on .ft_left_box .ft_info_wrap p > a { color:#fff; }
+.main_footer.on .ft_left_box .ft_info_wrap .ft_info_list .icon-facebook a { background-image:url("https://recruit.skinnovation.com/resources_ui/images/main/icon-ft-facebook-w.svg"); }
+.main_footer.on .ft_left_box .ft_info_wrap .ft_info_list .icon-youtube a { background-image:url("https://recruit.skinnovation.com/resources_ui/images/main/icon-ft-youtube-w.svg"); }
+.main_footer.on .ft_left_box .ft_info_wrap .ft_info_list .icon-instar a { background-image:url("https://recruit.skinnovation.com/resources_ui/images/main/icon-ft-instar-w.svg"); }
+.main_footer.on .ft_left_box .ft_info_wrap .ft_info_list .icon-in a { background-image:url("https://recruit.skinnovation.com/resources_ui/images/main/icon-ft-in-w.svg"); }
+
+.ft_banner{width:184px;height:40px;background-repeat:no-repeat;}
+
+.footer_inner .ft_right_box{display:flex;}
+
+.family_select_wrap{position:relative;width:210px;height:43px;margin-right:30px;}
+
+.family_select_wrap .family_title_wrap .family_title{display:flex;justify-content:space-between;align-items:center;padding:12px 0;border-bottom:1px solid var(--black);font-size:1.5rem;font-weight:600;line-height:1.2;}
+.family_select_wrap .family_title_wrap .family_title:after{content:"";display:inline-block;width:12px;height:12px;background-image:url("https://recruit.skinnovation.com/resources_ui/images/main/icon-plus.svg");background-repeat:no-repeat;background-position:center center;}
+.family_select_wrap.active .family_title_wrap .family_title:after{background-image:url("https://recruit.skinnovation.com/resources_ui/images/main/icon-minus.svg");}
+
+.main_footer.on .family_select_wrap .family_title_wrap .family_title { border-bottom:1px solid #fff; color:#fff; }
+.main_footer.on .family_select_wrap .family_title_wrap .family_title:after { background-image:url("https://recruit.skinnovation.com/resources_ui/images/main/icon-plus-w.svg"); }
+.main_footer.on .family_select_wrap.active .family_title_wrap .family_title:after{background-image:url("https://recruit.skinnovation.com/resources_ui/images/main/icon-minus-w.svg");}
+
+.family_select_wrap .family_list_wrap{display:none;}
+.family_select_wrap.active .family_list_wrap{display:block;}
+
+.family_select_wrap .family_list_wrap .family_list{position:absolute;bottom:calc(100% + 12px);left:0;z-index:100;width:100%;padding:10px 15px;border:1px solid var(--black);background-color:#fff;}
+
+.family_list_wrap .family_list li{margin-bottom:5px;}
+.family_list_wrap .family_list li:last-child{margin-bottom:0;}
+
+.family_list_wrap .family_list li a{display:block;;padding:10px 0;color:var(--dark-gray);transition:.3s;}
+.family_list_wrap .family_list li a:hover{color:var(--black);}
+/* family Site end */
+
+.go-top-wrap.active.on { bottom:140px; }
+
+@media screen and (max-width:1700px) {
+
+	/* way to green */
+	.for_pc,
+	.for_mob { display:none; }
+	.for_pc_1700 { display:block; }
+	/* way to green end */
+
+	/* be professional */
+	.be_pro_ttl_wrap { padding-left:160px; }
+	.be_pro_ttl_wrap > div strong { font-size:160px; }
+
+	.pro_mngr_txt ul li p { font-size:58px; }
+	/* be professional end */
+
+	/* be yourself */
+	.be_yourself_ttl_wrap { padding-left:160px; }
+	.be_yourself_ttl_wrap > div strong { font-size:160px; }
+
+	.yourself_txt ul li p { font-size:58px; }
+	/* be yourself end */
+
+}
+
+@media screen and (max-width:1400px) {
+
+	/* be professional */
+	.be_pro_ttl_wrap { padding-left:117px; }
+	.be_pro_ttl_wrap > div strong { font-size:150px; }
+
+	.pro_mngr_txt ul li p { font-size:48px; }
+	/* be professional end */
+
+	/* be yourself */
+	.be_yourself_ttl_wrap { padding-left:117px; }
+	.be_yourself_ttl_wrap > div strong { font-size:150px; }
+
+	.yourself_txt ul li p { font-size:48px; }
+	/* be yourself end */
+
+}
+
+@media screen and (max-width:1280px) {
+
+	/* intro */
+	.intro_balls { height:162px; margin:-81px 0 0 -81px; width:162px; }
+	.each_balls { height:36px; width:36px; }
+	.each_balls.ball1 { margin-left:-18px; }
+	.each_balls.ball2 { margin-top:-18px;  }
+	.each_balls.ball3 { margin-left:-18px; }
+	.each_balls.ball4 { margin-top:-18px; }
+
+	.old_logo { height:219.75px; margin:-109.875px 0 0 -135px; width:270px; }
+
+	.red_ball,
+	.green_ball { height:300px; margin:-150px 0 0 -150px; width:300px; }
+
+	.white_balls { height:162px; margin:-81px 0 0 -81px; width:162px; }
+	.white_balls > div { height:36px; width:36px; }
+	.white_ball1 { margin-left:-18px; }
+	.white_ball2 { margin-top:-18px; }
+	.white_ball3 { margin-left:-18px; }
+	.white_ball4 { margin-top:-18px; }
+
+	.white_logo,
+	.new_logo { height:219.75px; margin:-109.875px 0 0 -135px; width:270px; }
+	/* intro end */
+
+	/* be professional */
+	.be_pro_ttl_wrap { padding-left:85px; }
+	.be_pro_ttl_wrap > div strong { font-size:116px; }
+
+	.pro_mngr_txt ul li p { font-size:38px; }
+	/* be professional end */
+
+	/* be yourself */
+	.be_yourself_ttl_wrap { padding-left:85px; }
+	.be_yourself_ttl_wrap > div strong { font-size:116px; }
+
+	.yourself_txt ul li p { font-size:38px; }
+	/* be yourself end */
+
+}
+
+@media screen and (max-width:1024px) {
+
+	.main_header { height:60px; }
+	.main_header.active { background-color:#fff; height:100%; overflow-x:hidden; width:100%; }
+	.main_header.active.blur { background:#fff; backdrop-filter:blur(0); }
+
+	.main_header .header_inner { flex-direction:column; justify-content:flex-start; padding:0 20px; position:relative; }
+	.main_header.active .header_inner { min-height:100%; overflow-y:auto; padding-bottom:60px; }
+	.main_header.active .header_inner:after { background:url("https://recruit.skinnovation.com/resources_ui/images/footer/bg-mo-footer-banner.png") center / 174px 38px no-repeat; bottom:100px; content:""; height:40px; position:absolute; right:20px; width:174px; }
+
+	.main_header .logo a { background-image:url("https://recruit.skinnovation.com/resources_ui/images/common/mo-logo.svg"); height:60px; width:108px; }
+
+	.main_header .gnb { display:none; }
+	.main_header.active .gnb { display:block; margin-top:80px; }
+	.main_header.active .gnb .gnb_list { display:block; width:100%; }
+	.main_header.active .gnb .gnb_list li { margin-bottom:20px; margin-right:0; padding:0 4px; }
+	.main_header.on .gnb .gnb_list .depth01 { color:var(--black); }
+
+	.main_header .gnb .gnb_list .depth01 { font-size:3rem; }
+
+	.yourself_txt ul li.txt03 { margin-top:36px; }
+	.yourself_txt ul li.txt03 a { font-size:1.5rem; height:50px; line-height:50px; margin:0 5px; width:135px; }
+
+	/* footer */
+	.main_footer { bottom:-236px; height:236px; }
+	.main_footer .footer_inner{padding:41px 20px 50px;flex-direction:column;align-items:flex-start;}
+
+	.footer_inner .ft_left_box{margin-bottom:38px;}
+	.footer_inner .ft_left_box .copyright{margin-bottom:12px;}
+
+	.family_select_wrap .family_title_wrap .family_title{font-size:1.6rem;}
+
+	.family_select_wrap{margin-right:0;}
+
+	.family_list_wrap .family_list li{margin-bottom:0;}
+	.family_list_wrap .family_list li a{font-size:1.4rem;}
+	/* footer end */
+
+	.go-top-wrap.active.on { bottom:80px; }
+
+}
+
+@media screen and (max-width:960px) {
+
+	/* intro */
+	.intro_balls { height:108px; margin:-54px 0 0 -54px; width:108px; }
+	.each_balls { height:24px; width:24px; }
+	.each_balls.ball1 { margin-left:-12px; }
+	.each_balls.ball2 { margin-top:-12px; }
+	.each_balls.ball3 { margin-left:-12px; }
+	.each_balls.ball4 { margin-top:-12px; }
+
+	.old_logo { height:146.5px; margin:-73.25px 0 0 -90px; width:180px; }
+
+	.red_ball,
+	.green_ball { height:200px; margin:-100px 0 0 -100px; width:200px; }
+
+	.white_balls { height:108px; margin:-54px 0 0 -54px; width:108px; }
+	.white_balls > div { height:24px; width:24px; }
+	.white_ball1 { margin-left:-12px; }
+	.white_ball2 { margin-top:-12px; }
+	.white_ball3 { margin-left:-12px; }
+	.white_ball4 { margin-top:-12px; }
+
+	.white_logo,
+	.new_logo { height:146.5px; margin:-73.25px 0 0 -90px; width:180px; }
+	/* intro end */
+
+	/* way to green */
+	.for_mob { display:block; }
+	.for_pc,
+	.for_pc_1700 { display:none; }
+	/* way to green end */
+
+	/* be professional */
+	.be_pro_ttl_wrap { padding-left:80px; }
+	.be_pro_ttl_wrap > div strong { font-size:80px; }
+
+	.pro_mngr_txt ul li p { font-size:32px; }
+	/* be professional end */
+
+	/* be yourself */
+	.be_yourself_ttl_wrap { padding-left:80px; }
+	.be_yourself_ttl_wrap > div strong { font-size:80px; }
+
+	.yourself_txt ul li p { font-size:32px; }
+	/* be yourself end */
+
+}
+
+@media screen and (max-width:750px) {
+
+	/* way to green */
+	.way_to_green { background:url("https://recruit.skinnovation.com/resources_ui/images/main/m/sect1_bg.jpg") center / cover no-repeat; }
+	/* way to green end */
+
+	/* be professional */
+	.be_pro_ttl_wrap { padding-left:60px; }
+	.be_pro_ttl_wrap > div strong { font-size:64px; }
+
+	.be_pro_bg { background:url("https://recruit.skinnovation.com/resources_ui/images/main/m/sect2_bg.jpg") center top / cover no-repeat; }
+
+	.pro_mngr_txt ul li p { font-size:26px; }
+	/* be professional end */
+
+	/* be yourself */
+	.be_yourself_ttl_wrap { padding-left:60px; }
+	.be_yourself_ttl_wrap > div strong { font-size:64px; }
+
+	.be_yourself_bg { background:url("https://recruit.skinnovation.com/resources_ui/images/main/m/sect3_bg.jpg") center top / cover no-repeat; }
+
+	.yourself_txt ul li p { font-size:26px; }
+	/* be yourself end */
+}
+
+@media screen and (max-width:640px) {
+
+	/* intro */
+	.intro_balls { height:54px; margin:-27px 0 0 -27px; width:54px; }
+	.each_balls { height:12px; width:12px; }
+	.each_balls.ball1 { margin-left:-6px; }
+	.each_balls.ball2 { margin-top:-6px; }
+	.each_balls.ball3 { margin-left:-6px; }
+	.each_balls.ball4 { margin-top:-6px; }
+
+	.old_logo { height:73.25px; margin:-36.625px 0 0 -45px; width:90px; }
+
+	.red_ball,
+	.green_ball { height:100px; margin:-50px 0 0 -50px; width:100px; }
+
+	.white_ball { height:12px; margin:-6px 0 0 -6px; width:12px; }
+
+	.white_balls { height:54px; margin:-27px 0 0 -27px; width:54px; }
+	.white_balls > div { height:12px; width:12px; }
+	.white_ball1 { margin-left:-6px; }
+	.white_ball2 { margin-top:-6px; }
+	.white_ball3 { margin-left:-6px; }
+	.white_ball4 { margin-top:-6px; }
+
+	.white_logo,
+	.new_logo { height:73.25px; margin:-36.625px 0 0 -45px; width:90px; }
+	/* intro end */
+
+	/* be professional */
+	.be_pro_ttl_wrap { padding-left:30px; }
+	.be_pro_ttl_wrap > div strong { font-size:36px; left:0; }
+	/* be professional end */
+
+	/* be yourself */
+	.be_yourself_ttl_wrap { padding-left:30px; }
+	.be_yourself_ttl_wrap > div strong { font-size:36px; left:0; }
+	/* be yourself end */
+
+}
